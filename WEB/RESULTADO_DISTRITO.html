@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tivo is a HTML landing page template built with Bootstrap to help you crate engaging presentations for SaaS apps and convert visitors into users.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Article Details - Tivo - SaaS App HTML Landing Page Template</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Dropdown Menu -->          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" href="index.html#header" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">INICIO</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#features"><span class="item-text">Características</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="#datos"><span class="item-text">Datos</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="#nosotros"><span class="item-text">Nosotros</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="#video"><span class="item-text">Video</span></a>
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+                    
+                    
+
+                </ul>
+
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="NIVEL_NACIONAL.html">NACIONAL</a>
+                </span>
+
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="NIVEL_DEPARTAMENTO.html">DEPARTAMENTOS</a>
+                </span>
+
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="NIVEL_PROVINCIA.html">PROVINCIAS</a>
+                </span>
+
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="NIVEL_DISTRITO.html">DISTRITOS</a>
+                </span>
+
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="NIVEL_CENTRO_POBLADO.html">CENTRO POBLADO</a>
+                </span>
+                
+                
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="ANALIZADOR.html">ANALIZADOR</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Análisis Realizado</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+    <!-- Terms Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h3>RESULTADOS</h3>
+                        <p>Para este distrito hemos obtenido lo siguiente</p>
+                    </div> <!-- end of text-container -->
+                    <div class="results-container">
+                        
+                    
+                        <table class="table-custom">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="text-center">Detalles del Análisis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Grupo 1: Estaciones Base por Tecnología -->
+                                <tr>
+                                    <td>Estaciones Base 2G</td>
+                                    <td>{{ info['CANT_EB_2G'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Estaciones Base 3G</td>
+                                    <td>{{ info['CANT_EB_3G'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Estaciones Base 4G</td>
+                                    <td>{{ info['CANT_EB_4G'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Estaciones Base 5G</td>
+                                    <td>{{ info['CANT_EB_5G'].iloc[0] }}</td>
+                                </tr>
+                    
+                                <!-- Grupo 2: Cobertura y Calificación -->
+                                <tr>
+                                    <td>Calificación</td>
+                                    <td>{{ info['CALIFICACION'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Estaciones Base</td>
+                                    <td>{{ info['CANT_EB_TOTAL'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Alcance de Estaciones Base</td>
+                                    <td>{{ info['ALCANCE_EB'].iloc[0] }}</td>
+                                </tr>
+                    
+                                <!-- Grupo 3: Población -->
+                                <tr>
+                                    <td>Población Cubierta</td>
+                                    <td>{{ info['POBLACION_CUBIERTA'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Población No Cubierta</td>
+                                    <td>{{ info['POBLACION_NO_CUBIERTA'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Población Total</td>
+                                    <td>{{ info['POBLACION_TOTAL'].iloc[0] }}</td>
+                                </tr>
+                    
+                                <!-- Grupo 4: Propuesta de Optimización -->
+                                <tr>
+                                    <td>Estaciones Base Necesarias</td>
+                                    <td>{{ info['EB_NECESARIAS'].iloc[0] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Estaciones Base Faltantes</td>
+                                    <td>{{ info['EB_FALTANTES'].iloc[0] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+    
+                    <div class="text-container">
+                        <h3>EXPLICACIÓN</h3>
+                        <p>Luego de realizar el análisis correspondiente para este departamento hemos obtenido 
+                            la cantidad de EB necesarias para poder cubrir a la población, para hallar esta 
+                            información hemos tomado en cuenta un alcance de 150 personas por EB, nuestra 
+                            propuesta para mejorar la cobertura es la siguiente:</p>
+                            <div class="propuesta-cuadro">
+                                <p><strong>{{ propuesta | safe }}</strong></p>
+                            </div>
+                        
+                        <p>Cada EB tiene un diferente propósito y en conjunto se complementan para obtener una mejor calidad de cobertura, sus principales funciones son las siguientes:</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">2G: Es la tecnología más antigua, usada principalmente para llamadas y
+                                    mensajes de texto. Una mayor cantidad de estaciones base de 2G sugiere que el área tiene
+                                     una cobertura básica, pero limitada en términos de velocidad de internet.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">3G: Ofrece una mejora significativa en la velocidad de datos en comparación 
+                                    con 2G. Un número alto de estaciones base 3G indica una cobertura mejorada en términos de 
+                                    velocidad de navegación.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">4G: Permite velocidades más altas para datos, adecuado para servicios como 
+                                    streaming y descargas rápidas. Un aumento en las estaciones base de 4G refleja una red móvil 
+                                    más avanzada y eficiente.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">5G: Es la tecnología más reciente, proporcionando velocidades más rápidas 
+                                    y baja latencia, crucial para aplicaciones como el Internet de las Cosas (IoT). La cantidad de 
+                                    estaciones base de 5G refleja el nivel de modernización de la red en esa área.</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+    
+                    <h2>Gráfico de Estaciones Base por Tecnología</h2>
+                    <div>
+                        {{ grafico_html1 | safe }}
+                    </div>
+    
+                    <div>
+                        {{ grafico_html2 | safe }}
+                    </div>
+    
+                    <h2>Población cubierta en el departamento</h2>
+                    <div>
+                        {{ grafico_html3 | safe }}
+                    </div>
+    
+                    <h2>Comparación de EB necesarias con las faltantes</h2>
+                    <div>
+                        {{ grafico_html4 | safe }}
+                    </div>
+                </div> <!-- end of col-lg-12 -->
+            </div> <!-- end of row -->
+            <a href="{{ url_for('descargar_reporte_distrito', departamento=info['DISTRITO'].iloc[0]) }}" class="btn-solid-reg">
+                DESCARGA
+            </a>
+            <div class="button-container">
+                <button class="btn-solid-reg" href="NIVEL_DISTRITO.html">RETROCEDER</button>
+            </div>
+            
+        </div> <!-- end of container -->
+        
+    </div> <!-- end of ex-basic-2 -->
+
+    
+   
+
+
+    <!-- Footer -->
+    <svg class="ex-footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#5f4def;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>Sobre IntiNet</h4>
+                        <p class="p-small">Un analizador desarrollado por un grupo de estudiante de Ing. de Telecomunicaciones</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Links Importantes</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Informe Osiptel <a class="white" href="https://www.osiptel.gob.pe/media/k0bhdes1/np-estaciones-celulares.pdf">osiptel.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Base de datos <a class="white" href="terms-conditions.html">Terms & Conditions</a>, <a class="white" href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Contáctanos</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:maria.evangelista.a@uni.pe">maria.evangelista.a@uni.pe</a> 
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:sebastian.euribe.z@uni.pe">sebastian.euribe.z@uni.pe</a> 
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:jazmin.jaco.m@uni.pe">jazmin.jaco.m@uni.pe</a> 
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:angela.silva.v@uni.pe">angela.silva.v@uni.pe</a> 
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:lia.corpus.r@uni.pe">lia.corpus.r@uni.pe</a> 
+                            </li>
+                        </ul>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+    
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
